@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+   <html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>covid</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <body>
+       
+       
+       <style>
+           
+           body {
+    margin: 0;
+    padding: 0;
+    background: rgb(175, 230, 173);
+}
+h3 {
+    padding: 40px 0px 20px 0px;
+    text-align: center;
+}
+h1 {
+    color: darkcyan;
+    text-align: center;
+}
+p {
+    text-align: center;
+    font-size: small;
+
+}
+.covid {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.image {
+    top: 20px;
+    position: absolute;
+    left:  550px;
+}
+.form-box {
+    top: 70px;
+    width: 400px;
+    height: 620px;
+    position: relative;
+    margin: 0% auto;
+    background: #ffffff;
+    padding-top: 30px;
+    border-radius: 18px;
+   
+
+
+}
+.form {
+    width: 320px;
+    height: 600px;
+    top: 47%;
+    left: 50%;
+    bottom: 40%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 70px 30px;
+    
+   
+   
+}
+.form input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    height: 43px;
+    font-size: 16px;
+    border-radius: 7px;
+    background: darkgray;
+    padding-left: 4px;
+}
+#data-period-type {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 40px;
+    outline: none;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 7px;
+    background: darkgray;
+    
+}
+.form input[type="submit"] {
+    outline: none;
+    height: 50px;
+    background: blue;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: -20px;
+    border: 30px;
+    text-align: center;
+}
+.form input[type="submit"]:hover {
+    cursor: pointer;
+    background: darkblue;
+    margin-bottom: 40px;
+}
+.form a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    top: 40px;
+
+   
+}
+.form a:hover {
+    color: darkgrey;
+}
+
+        </style>
+        <div class="covid">
+            <div class="form-box">
+                <form class="form">
+            <h1>COVID-19 ESTIMATOR</h1>
+            <label for="data-population">Population</label><br>
+                    <input type="text" id="data-population" name="Population" placeholder="population"><br>
+                    <label for="timeToElapse">Time To Elapse</label><br>
+                    <input type="text" id="data-time-to-elapse" name="data-time-to-elapse" placeholder="timeToElapse"><br>
+                    <label for="reportedCases">Reported Cases</label><br>
+                    <input type="text" id="data-reported-cases" name="reportedCases" placeholder="reportedCases"><br>
+                    <label for="data-total-hospital-beds">Total Hospital Beds</label><br>
+                    <input type="text" id="data-total-hospital-beds" name="totalHospitalBeds" placeholder="totalHospitalBeds"><br>
+                    <label for="data-period-type">Period Type</label><br>
+                    <select id="data-period-type">
+                        <option value=" select">months</option>
+                        <option value=" facebook">Jan</option>
+                        <option value=" select">Feb</option>
+                        <option value=" select">Mar</option>
+                        <option value=" select">Apr</option>
+                        <option value=" select">May</option>
+                        <option value=" select">Jun</option>
+                        <option value=" select">Jul</option>
+                        <option value=" select">Aug</option>
+                        <option value=" select">Sept</option>
+                        <option value=" select">Oct</option>
+                        <option value=" select">Nov</option>
+                        <option value=" select">Dec</option>
+                    </select>
+                    
+                    <input type="submit" value="Go Estimate">
+                
+        
+                </form>
+
+            </div>
+        </div>
+        
+        <script src=""></script>
+    </body>
+</html>
